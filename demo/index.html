@@ -3,14 +3,13 @@
 		<meta charset="utf-8"/>
 		<script>
 			var createOtherWindow = function () {
-				const elbarpre = reuquire('elbarpreload');			
-			
+				
 				const remote = require('electron').remote;
 				const BrowserWindow = remote.BrowserWindow;
 			
 				var win = new BrowserWindow({
 					width: 800, height: 600, webPreferences: {
-						preload: require.resolve('elbarpreload')
+						preload: __dirname+'../index.js'
 					}
 				});
 		
