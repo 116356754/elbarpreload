@@ -1,0 +1,27 @@
+{
+  "name": "elbarpreload",
+  "version": "1.0.0",
+  "description": "\u0016 used for create BroserWindow in webPreferences's preload property",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/116356754/elbarpreload.git"
+  },
+  "keywords": [
+    "eltitlebar",
+    "electron",
+    "preload"
+  ],
+  "author": "wangky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/116356754/elbarpreload/issues"
+  },
+  "homepage": "https://github.com/116356754/elbarpreload#readme",
+  "dependencies": {
+    "eltitlebar": "^1.3.0"
+  }
+}
