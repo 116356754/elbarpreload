@@ -17,9 +17,8 @@ document.onreadystatechange = function () {
         var div = document.createElement('div');
         div.className = 'title';
         div.style = "display:inline-block; vertical-align:middle;text-align: left;";
-
         var img = document.createElement('img');
-        img.src = "../static/logo.ico";
+        img.src = __dirname+"/logo.ico";
         img.width = "18";
         img.height = "18";
         div.appendChild(img);
@@ -27,6 +26,7 @@ document.onreadystatechange = function () {
         //窗体的title
         var span = document.createElement('span');
         span.id = "win-title";
+        span.sytle="-webkit-user-select: none;";
         span.innerText = remote.getCurrentWindow().getTitle();
         div.appendChild(span);
 
