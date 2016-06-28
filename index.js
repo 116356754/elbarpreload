@@ -15,20 +15,10 @@ var remote = electron.remote;
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
         var div = document.createElement('div');
-        div.className = 'title';
+        div.className = 'title-t';
         div.style = "display:inline-block; vertical-align:middle;text-align: left;";
-        var img = document.createElement('img');
-        img.src = __dirname+"/logo.ico";
-        img.width = "18";
-        img.height = "18";
-        div.appendChild(img);
 
         //窗体的title
-        var span = document.createElement('span');
-        span.id = "win-title";
-        span.sytle="-webkit-user-select: none;";
-        span.innerText = remote.getCurrentWindow().getTitle();
-        div.appendChild(span);
 
         var body = document.body || document.getElementsByTagName('body')[0];
         body.insertBefore(div, body.childNodes[0]);
