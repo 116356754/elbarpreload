@@ -1,11 +1,20 @@
 # titlebar
+A node module for add titlebar in Electron's BrowserWindow .
 
-used for create BroserWindow in webPreferences's preload property
+##Introduction
+Used for create BroserWindow in webPreferences's preload property,we will set BroswerWindow  `frame` porperty is `false`.
 
-npm install elbarpreload
+this module depend **eltitlebar** module.
+
+##install
+    npm install elbarpreload --save
 
 # Usage
- webPreferences: {
-    preload: require.resolve('eltitlebar')
- }
+ 	var win = new BrowserWindow({
+		width: 800, height: 600, 
+		frame:false,
+		webPreferences: {
+			preload: require.resolve('elbarpreload')
+		}
+	});
 

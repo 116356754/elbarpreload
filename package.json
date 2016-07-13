@@ -1,6 +1,6 @@
 {
   "name": "elbarpreload",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "\u0016 used for create BroserWindow in webPreferences's preload property",
   "main": "index.js",
   "scripts": {
